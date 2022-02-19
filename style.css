@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 5rem;
+  background: white;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+  margin-left: 5rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: maroon;
+  font-size: 1.5rem;
+  -webkit-transform: translate(-50%, -50%) scale(5);
+          transform: translate(-50%, -50%) scale(5);
+}
+
+.home {
+  height: 100vh;
+}
+
+.first-page {
+  height: 100vh;
+  background: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.first-page img {
+  height: 50%;
+}
+
+.square {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: #f8ceec;
+  background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);  
+  position: absolute;
+  top: 70%;
+  left: 50%;
+}
+/*# sourceMappingURL=style.css.map */
