@@ -83,3 +83,45 @@ h2{
     top: 70%;
     left: 70%;
 }
+.contact-page{
+    background: black;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .row{
+        display: flex;
+        .details-section{
+            margin-right: 50px;
+        }
+        .contact-title{
+            align-content: center;
+            color: #b01724;
+            font-size: 38px;
+            margin: 0px 0px 50px 0px;
+        }
+        .form-section{
+            margin-left: 50px;
+            form{
+                display: flex;
+                flex-direction: column;
+                .form-control{
+                    margin: 10px;
+                    padding: 10px;
+                    width: 500px;
+                    background: black;
+                    border: 2px solid #b01724;
+                    border-radius: 4px;
+                }
+                 :nth-child(4){
+                    background: #b01724;
+                    color: white;
+                    border-radius: 10px;
+                }
+            }
+        }
+        
+    }
+}

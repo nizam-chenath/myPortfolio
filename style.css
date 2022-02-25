@@ -112,4 +112,67 @@ h2 {
   top: 70%;
   left: 70%;
 }
+
+.contact-page {
+  background: black;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-page .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-page .row .details-section {
+  margin-right: 50px;
+}
+
+.contact-page .row .contact-title {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #b01724;
+  font-size: 38px;
+  margin: 0px 0px 50px 0px;
+}
+
+.contact-page .row .form-section {
+  margin-left: 50px;
+}
+
+.contact-page .row .form-section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-page .row .form-section form .form-control {
+  margin: 10px;
+  padding: 10px;
+  width: 500px;
+  background: black;
+  border: 2px solid #b01724;
+  border-radius: 4px;
+}
+
+.contact-page .row .form-section form :nth-child(4) {
+  background: #b01724;
+  color: white;
+  border-radius: 10px;
+}
 /*# sourceMappingURL=style.css.map */
