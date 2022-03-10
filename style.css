@@ -177,6 +177,11 @@ h2 {
 }
 
 .third-page {
+  background-image: url("./images/page3background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,11 +192,16 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
+  height: 130vh;
 }
 
 .third-page h1 {
-  margin: 20px 0px 100px 0px;
+  margin-left: -1000px;
+  margin-bottom: 120px;
+  margin-top: 100px;
+  font-size: 50px;
+  font-family: 'Redressed', cursive;
+  color: #b01724;
 }
 
 .third-page .card-section {
@@ -210,12 +220,22 @@ h2 {
 }
 
 .third-page .card-section .card {
-  background: black;
   border: 1px solid white;
   height: 250px;
   width: 200px;
   border-radius: 20px;
   margin: 10px;
-  color: white;
+  color: #b01724;
+  font-family: 'Redressed', cursive;
+  -webkit-box-shadow: 0 8px 8px -4px;
+          box-shadow: 0 8px 8px -4px;
+}
+
+.third-page .card-section .card img {
+  height: 180px;
+  width: 250px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */
