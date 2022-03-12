@@ -9,7 +9,8 @@
     
 }
 body{
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Redressed', cursive;
+    overflow: hidden;
 }
 nav{
     display: flex;
@@ -134,7 +135,7 @@ h2{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-  
+    overflow: hidden;
     display: flex;
     align-items: center;
     // justify-content: center;
@@ -173,7 +174,7 @@ h2{
         flex-direction: row;
         flex-wrap: wrap;
         .card{
-        
+            overflow: hidden;
             border: 1px solid white;
             height: 250px;
             width: 200px;
@@ -208,7 +209,7 @@ footer{
     right: 0;
     background: #111;
     height: auto;
-    width: 100vw;
+  
     padding-top: 40px;
     color: #fff;
 
@@ -227,7 +228,7 @@ footer{
         }
         p{
             max-width: 500px;
-            margin: 10px auto;
+            margin: 2px 1px;
             line-height: 28px;
             font-size: 14px;
             color: #cacdd2;
@@ -238,7 +239,7 @@ footer{
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 1rem 0 3rem 0;
+            margin: .5rem 0 .5rem 0;
 
             li{
                 margin: 0px 10px;

@@ -8,7 +8,8 @@
 }
 
 body {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Redressed', cursive;
+  overflow: hidden;
 }
 
 nav {
@@ -184,6 +185,7 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,6 +245,7 @@ h2 {
 }
 
 .third-page .card-section .card {
+  overflow: hidden;
   border: 1px solid white;
   height: 250px;
   width: 200px;
@@ -276,7 +279,6 @@ footer {
   right: 0;
   background: #111;
   height: auto;
-  width: 100vw;
   padding-top: 40px;
   color: #fff;
 }
@@ -307,7 +309,7 @@ footer .footer-content h3 {
 
 footer .footer-content p {
   max-width: 500px;
-  margin: 10px auto;
+  margin: 2px 1px;
   line-height: 28px;
   font-size: 14px;
   color: #cacdd2;
@@ -325,7 +327,7 @@ footer .footer-content .socials {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 1rem 0 3rem 0;
+  margin: .5rem 0 .5rem 0;
 }
 
 footer .footer-content .socials li {
