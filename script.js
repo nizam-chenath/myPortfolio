@@ -22,7 +22,7 @@ let tl4 = gsap.timeline({
     scrollTrigger: {
         trigger: ".home",
         start: "0%",
-        end: "150%",
+        end: "80%",
         scrub: 1,
     },
 });
@@ -98,6 +98,14 @@ let tl12 = gsap.timeline({
         scrub: 1,
     },
 });
+let tl15 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".blog",
+        start: "-20%",
+        end: "1%",
+        scrub: 1,
+    },
+});
 
 tl.fromTo('.sliding-text', { y: 0 }, { y: -400 });
 tl2.fromTo('.logo', {scale: 6},{scale:1, top: "2rem", left: "3rem", x:"50%", y: "50%"});
@@ -111,6 +119,7 @@ tl9.fromTo('.card', { opacity: 0}, {  opacity: 1}, );
 tl10.fromTo('.project', { opacity: 0}, {  opacity: 1}, );
 tl11.fromTo('.intro1', { opacity: 0}, {  opacity: 1}, );
 tl12.fromTo('.intro2', { opacity: 0}, {  opacity: 1}, );
+tl15.fromTo('.blog-box', { opacity: 0}, {  opacity: 1}, );
 
 
 

@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Redressed', cursive;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Redressed', cursive;
+}
+
+#blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.home-btn {
+  position: absolute;
+  left: 110;
+  top: 50;
+}
+
+.home-btn a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 2px 2px black;
+          box-shadow: 1px 2px 2px black;
+  font-size: 0.8rem;
+}
+
+.blog-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog-heading span {
+  font-family: 'Redressed', cursive;
+  color: red;
+}
+
+.blog-heading h3 {
+  font-family: 'Redressed', cursive;
+  font-size: 2.4rem;
+  color: #262626;
+  font-weight: 600;
+}
+
+.blog-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blog-container .blog-box {
+  width: 350px;
+  background: #fff;
+  border: 1px solid #ececec;
+  margin: 20px;
+}
+
+.blog-container .blog-box .blog-img {
+  width: 100%;
+  height: 200px;
+}
+
+.blog-container .blog-box .blog-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.blog-container .blog-box .blog-text {
+  font-family: 'Redressed', cursive;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog-container .blog-box .blog-text span {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.blog-container .blog-box .blog-text .blog-title {
+  font-family: 'Redressed', cursive;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #272727;
+}
+
+.blog-container .blog-box .blog-text :hover {
+  color: red;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.blog-container .blog-box .blog-text p {
+  font-family: 'Redressed', cursive;
+  color: #9b9b9b;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px 0;
+}
+
+.blog-container .blog-box .blog-text a {
+  font-family: 'Redressed', cursive;
+  color: #0f0f0f;
+}
+
+.blog-container .blog-box .blog-text :hover {
+  color: red;
+  -webkit-transition: all ease o 0.3s;
+  transition: all ease o 0.3s;
+}
+
+@media (max-width: 1250px) {
+  .blog-box {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .blog-box {
+    width: 70%;
+  }
+}
+
+@media (max-width: 550px) {
+  .blog-box {
+    margin: 20px 10px;
+    width: 100%;
+  }
+  #blog {
+    padding: 20px;
+  }
+}
+/*# sourceMappingURL=style2.css.map */
