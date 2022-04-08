@@ -33,6 +33,21 @@ nav{
         color: black;
         margin-left: 5rem;
     }
+    a:hover{
+        color:  #b01724;
+    }
+    .burger{
+        margin-top: 10px;
+        display: none;
+        cursor: pointer;
+        div{
+            width: 25px;
+            height: 3px;
+            background-color: #b01724;
+            margin: 5px;
+            transition: all 0.2s ease;
+        }
+    }
 }
 h2{
     font-size: 5rem;
@@ -49,6 +64,8 @@ h2{
 .home{
     height: 100vh;
 }
+
+
 .first-page{
     height: 100vh;
     background: black;
@@ -175,6 +192,8 @@ h2{
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
+        overflow: hidden;
+       
         .card{
             overflow: hidden;
             border: 1px solid white;
@@ -319,11 +338,135 @@ footer{
           }
     }
 }
+@media (max-width: 952px){
+    nav ul a{
+        font-size: 1rem;
+        
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    .first-page {
+        img{
+            height: 40%;
+        }
+        h2{
+            font-size: 3rem;
+        }
+        p{
+            font-size: .8rem;
+            
+        }
+    }
+    .second-page {
+        img{
+            height: 40%;
+        }
+        h2{
+            font-size: 3rem;
+        }
+        p{
+            font-size: .8rem;
+            
+        }
+        .third-page{
+            h1{
+                position: absolute;
+                font-size: 50px;
+                font-family: 'Redressed', cursive;
+                color: #b01724;
+                transition: margin-left 2s;
+                z-index: 1;
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+   .third-page{
+       height: auto;
+       h1{
+           margin-left: -50px;
+           font-size: 40px;
+           transition: margin-left 4s;
+           margin-top: 1rem;
+           overflow: hidden;
+       }
+       h1:hover{
+           margin-left: 10px;
+       }
+       .square2{ 
+        width: 15rem;
+        height: 15rem;
+       }
+       .card-section{
+           margin-bottom: 30px;
+           .card{
+               margin: 20px 15px;
+           }
+        .card:hover{
+            width: 200px;
+            color: bisque;
+        }
+    }
+   }
+   nav{
+       .nav-links{
+           
+           position: absolute;
+           right: 0px;
+           height: 86.6vh;
+           top: 13.4vh;
+           background-color: #ff4e00;
+           background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           width: 60%;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
+           li{
+               margin: 50px 180px 10px 70px;
+               opacity: 0;
+           }
+           
+       }
+       .burger{
+           display: block;
+        
+       }
+       .nav-active{
+          transform: translateX(0%);
+       }
+   }
+   @keyframes navLinkFade {
+       from{
+           opacity: 0;
+           transform: translateX(50px);
+       }
+       to{
+           opacity: 1;
+           transform: translateX(0px);
+       }
+   }
+   .cross .line1{
+       transform: rotate(45deg) translate(5px, 6px);
+   }
+   .cross .line2{
+       opacity: 0;
+   }
+   .cross .line3{
+       transform: rotate(-45deg) translate(5px, -6px);
+   }
+  
+}
+
 @media (max-width:500px) {
     .footer-menu ul{
       display: flex;
       margin-top: 10px;
       margin-bottom: 20px;
+     
     }
     }
 
