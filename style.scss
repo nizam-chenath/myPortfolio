@@ -71,6 +71,7 @@ h2{
     background: black;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     img{
@@ -86,6 +87,7 @@ h2{
     background: black;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     img{
@@ -101,7 +103,8 @@ h2{
     background-size: cover;
     position: absolute;
     top: 70%;
-    left: 70%;
+    left: 55%;
+    
 }
 
 .contact-page{
@@ -114,6 +117,7 @@ h2{
     justify-content: center;
     .row{
         display: flex;
+        flex-wrap: wrap;
         .details-section{
             margin-right: 50px;
         }
@@ -128,6 +132,7 @@ h2{
             form{
                 display: flex;
                 flex-direction: column;
+                
                 .form-control{
                     margin: 10px;
                     padding: 10px;
@@ -408,16 +413,29 @@ footer{
             color: bisque;
         }
     }
+    .contact-page{
+        .contact-title{
+            font-size: 30px;
+            margin: 0px 0px 50px 10px;
+        }
+        .form-section{
+            margin-left: 10px;
+            .form-control{
+                width: 400px;
+            }
+        }
+    }
    }
    nav{
        .nav-links{
-           
+           z-index: 1;
            position: absolute;
            right: 0px;
            height: 86.6vh;
            top: 13.4vh;
-           background-color: #ff4e00;
-           background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+           background-color: #f977ce;
+           background-image: linear-gradient(315deg, #f977ce 0%, #c373f2 74%);
+           border: 3px solid black;
            display: flex;
            flex-direction: column;
            align-items: center;
@@ -462,12 +480,87 @@ footer{
 }
 
 @media (max-width:500px) {
-    .footer-menu ul{
-      display: flex;
-      margin-top: 10px;
-      margin-bottom: 20px;
+    nav{
+        .sliding-text{
+            margin-left: -30px;
+            margin-top: 20px;
+        }
+        .burger{
+          margin-right: -50px;
+          margin-top: 25px;
+        }
+        .nav-links{
+            width: 50%;
+            height: 80vh;
+            top: 15vh;
+           
+        }
+        ul{
+            a{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .logo{
+        font-size: 0.6rem;
+    }
+    .first-page{
+       
+        img{
+            height: 35%;
+            width: 90vw;
+            border-radius: 1rem;
+            margin-left: 4px;
+        }
+    }
+    .second-page{
+        img{
+            height: 35%;
+            width: 90vw;
+            border-radius: 1rem;
+            margin-left: 4px;
+        }
+    }
+    .third-page{
+        .card-section{
+            .card{
+                margin: 20px 80px;
+                height: 350px;
+                width: 300px;
+            }
+        }
+    }
+    .contact-page{
+        height: 80vh;
+        .row{
+            margin-top: -100px;
+            margin-bottom: -50px;
+            .details-section{
+                margin: 10px 0px 75px 100px;
+            }
+            .form-section{
+                margin-left: 10px;
+                
+                form{
+                    .form-control{
+                        width: 350px;
+                    }
+                }
+            }
+        }
+    }
+    .footer-menu {
+      display: none;
      
     }
+    footer{
+
+        .footer-bottom{
+            p{
+                margin-left: 80px;
+            }
+        }
     }
+}
 
 

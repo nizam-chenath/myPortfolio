@@ -90,6 +90,8 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -113,6 +115,8 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -133,7 +137,7 @@ h2 {
   background-size: cover;
   position: absolute;
   top: 70%;
-  left: 70%;
+  left: 55%;
 }
 
 .contact-page {
@@ -156,6 +160,8 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contact-page .row .details-section {
@@ -499,13 +505,25 @@ footer .footer-bottom .footer-menu ul li a:hover {
     width: 200px;
     color: bisque;
   }
+  .third-page .contact-page .contact-title {
+    font-size: 30px;
+    margin: 0px 0px 50px 10px;
+  }
+  .third-page .contact-page .form-section {
+    margin-left: 10px;
+  }
+  .third-page .contact-page .form-section .form-control {
+    width: 400px;
+  }
   nav .nav-links {
+    z-index: 1;
     position: absolute;
     right: 0px;
     height: 86.6vh;
     top: 13.4vh;
-    background-color: #ff4e00;
-    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+    background-color: #f977ce;
+    background-image: linear-gradient(315deg, #f977ce 0%, #c373f2 74%);
+    border: 3px solid black;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -576,12 +594,63 @@ footer .footer-bottom .footer-menu ul li a:hover {
 }
 
 @media (max-width: 500px) {
-  .footer-menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 20px;
+  nav .sliding-text {
+    margin-left: -30px;
+    margin-top: 20px;
+  }
+  nav .burger {
+    margin-right: -50px;
+    margin-top: 25px;
+  }
+  nav .nav-links {
+    width: 50%;
+    height: 80vh;
+    top: 15vh;
+  }
+  nav ul a {
+    font-size: 1.5rem;
+  }
+  .logo {
+    font-size: 0.6rem;
+  }
+  .first-page img {
+    height: 35%;
+    width: 90vw;
+    border-radius: 1rem;
+    margin-left: 4px;
+  }
+  .second-page img {
+    height: 35%;
+    width: 90vw;
+    border-radius: 1rem;
+    margin-left: 4px;
+  }
+  .third-page .card-section .card {
+    margin: 20px 80px;
+    height: 350px;
+    width: 300px;
+  }
+  .contact-page {
+    height: 80vh;
+  }
+  .contact-page .row {
+    margin-top: -100px;
+    margin-bottom: -50px;
+  }
+  .contact-page .row .details-section {
+    margin: 10px 0px 75px 100px;
+  }
+  .contact-page .row .form-section {
+    margin-left: 10px;
+  }
+  .contact-page .row .form-section form .form-control {
+    width: 350px;
+  }
+  .footer-menu {
+    display: none;
+  }
+  footer .footer-bottom p {
+    margin-left: 80px;
   }
 }
 /*# sourceMappingURL=style.css.map */
