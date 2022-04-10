@@ -81,6 +81,7 @@ h2 {
 
 .home {
   height: 100vh;
+  z-index: 1;
 }
 
 .first-page {
@@ -631,7 +632,7 @@ footer .footer-bottom .footer-menu ul li a:hover {
     width: 300px;
   }
   .third-page h1 {
-    margin: 20px 0px 0px 10px;
+    margin: 50px 0px 50px 10px;
   }
   .contact-page {
     height: 80vh;
@@ -641,7 +642,8 @@ footer .footer-bottom .footer-menu ul li a:hover {
     margin-bottom: -50px;
   }
   .contact-page .row .details-section {
-    margin: 10px 0px 75px 100px;
+    top: 50%;
+    margin: 20px 0px 75px 100px;
   }
   .contact-page .row .form-section {
     margin-left: 10px;
