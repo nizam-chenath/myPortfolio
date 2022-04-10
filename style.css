@@ -630,6 +630,9 @@ footer .footer-bottom .footer-menu ul li a:hover {
     height: 350px;
     width: 300px;
   }
+  .third-page h1 {
+    margin: 20px 0px 0px 10px;
+  }
   .contact-page {
     height: 80vh;
   }
