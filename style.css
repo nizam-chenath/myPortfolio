@@ -595,6 +595,9 @@ footer .footer-bottom .footer-menu ul li a:hover {
 }
 
 @media (max-width: 500px) {
+  nav {
+    padding: 0rem 5rem;
+  }
   nav .sliding-text {
     margin-left: -30px;
     margin-top: 20px;

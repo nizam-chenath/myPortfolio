@@ -183,8 +183,8 @@ if(window.innerWidth < 600){
     var tl9 = gsap.timeline({
         scrollTrigger: {
             trigger: ".third-page",
-            start: "-30%",
-            end: "-10%",
+            start: "-20%",
+            end: "0%",
             scrub: 1,
         },
     });
@@ -199,6 +199,7 @@ if(window.innerWidth < 600){
         },
     });
 }
+
 let tl10 = gsap.timeline({
     scrollTrigger: {
         trigger: ".third-page",
@@ -212,8 +213,8 @@ if(window.innerWidth  < 600){
     var tl12 = gsap.timeline({
         scrollTrigger: {
             trigger: ".second-page",
-            start: "-60%",
-            end: "-20%",
+            start: "-8%",
+            end: "20%",
             scrub: 1,
         },
     });
@@ -247,7 +248,13 @@ let tl20 = gsap.timeline({
 
 
 tl.fromTo('.sliding-text', { y: 0 }, { y: -400 });
-tl2.fromTo('.logo', {scale: 6},{scale:1, top: "2rem", left: "3rem", x:"50%", y: "50%"});
+//logo
+if(window.innerWidth<600){
+
+    tl2.fromTo('.logo', {scale: 6},{scale:2, top: "2rem", left: "3rem", x:"50%", y: "50%"});
+}else{
+    tl2.fromTo('.logo', {scale: 6},{scale:1, top: "2rem", left: "3rem", x:"50%", y: "50%"});
+}
 //square
 if(window.innerWidth < 600 || 700){
     tl4.fromTo('.square', {left: '10%'}, {left: '55%' , top: "20%", opacity: 0}, );
@@ -276,16 +283,29 @@ if(window.innerWidth < 600){
     tl20.fromTo('.nav-links', { opacity: 0.9}, {  opacity: 0}, );
 }
 
+if(window.innerWidth < 600){
 
- tl3 = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".home",
-        start: "0%",
-        end: "300%",
-        scrub: 1,
-        pin: true,
-        pinSpacing: false,
-    },
-});
+    tl3 = gsap.timeline({
+       scrollTrigger: {
+           trigger: ".home",
+           start: "0%",
+           end: "200%",
+           scrub: 1,
+           pin: true,
+           pinSpacing: false,
+       },
+   });
+}else{
+    tl3 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".home",
+            start: "0%",
+            end: "300%",
+            scrub: 1,
+            pin: true,
+            pinSpacing: false,
+        },
+    });
+}
 
 
