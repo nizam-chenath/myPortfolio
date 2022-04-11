@@ -40,7 +40,7 @@ if(window.innerWidth < 700){
         scrollTrigger: {
             trigger: ".home",
             start: "0%",
-            end: "110%",
+            end: "70%",
             scrub: 1,
         },
     });
@@ -57,15 +57,27 @@ if(window.innerWidth < 700){
 }
 
 
+//square
+if(window.innerWidth < 600){
 
-let tl4 = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".home",
-        start: "0%",
-        end: "80%",
-        scrub: 1,
-    },
-});
+    var tl4 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".home",
+            start: "0%",
+            end: "20%",
+            scrub: 1,
+        },
+    });
+}else{
+    var tl4 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".home",
+            start: "0%",
+            end: "80%",
+            scrub: 1,
+        },
+    });
+}
 let tl5 = gsap.timeline({
     scrollTrigger: {
         trigger: ".first-page",
@@ -236,13 +248,19 @@ let tl20 = gsap.timeline({
 
 tl.fromTo('.sliding-text', { y: 0 }, { y: -400 });
 tl2.fromTo('.logo', {scale: 6},{scale:1, top: "2rem", left: "3rem", x:"50%", y: "50%"});
-tl4.fromTo('.square', {left: '55%'}, {left: '100%' , top: "10%", opacity: 0}, );
+//square
+if(window.innerWidth < 600 || 700){
+    tl4.fromTo('.square', {left: '10%'}, {left: '55%' , top: "20%", opacity: 0}, );
+}else{
+
+    tl4.fromTo('.square', {left: '55%'}, {left: '100%' , top: "10%", opacity: 0}, );
+}
 tl5.fromTo('.firstImg', {left: '30%'}, {left: '100%' , opacity: 0}, );
 tl6.fromTo('.secondImg', {opacity: 0}, { opacity: 1}, );
 tl7.fromTo('.square2', {left: '10%',top: "80%"}, {left: '100%' , top: "0%", opacity: 0}, );
 tl8.fromTo('.form-section', {opacity: 0}, { opacity: 1}, );
 //details section in form
-if(window.innerWidth < 600){
+if(window.innerWidth < 600 ){
 
     tl13.fromTo('.details-section', {opacity: 0, top: "50%"}, { opacity: 1, top: '10%'}, );
 }else{

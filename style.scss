@@ -434,8 +434,8 @@ footer{
            right: 0px;
            height: 86.6vh;
            top: 13.4vh;
-           background-color: #f977ce;
-           background-image: linear-gradient(315deg, #f977ce 0%, #c373f2 74%);
+           background-color: #2a2a72;
+           background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
            border: 3px solid black;
            display: flex;
            flex-direction: column;
@@ -505,6 +505,12 @@ footer{
     .logo{
         font-size: 0.6rem;
     }
+    .square{
+        
+        background-color: #2a2a72;
+        background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+        
+    }
     .first-page{
        
         img{
@@ -550,7 +556,7 @@ footer{
                 
                 form{
                     .form-control{
-                        width: 350px;
+                        width: 330px;
                     }
                 }
             }
