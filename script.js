@@ -117,8 +117,8 @@ if(window.innerWidth<600){
     var tl11 = gsap.timeline({
         scrollTrigger: {
             trigger: ".first-page",
-            start: "-20%",
-            end: "50%",
+            start: "-60%",
+            end: "30%",
             scrub: 1,
         },
     });

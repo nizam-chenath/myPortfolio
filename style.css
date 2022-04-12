@@ -216,10 +216,7 @@ h2 {
 }
 
 .contact-page {
-  background-image: url("/images/contactBg.gif");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: black;
   height: 100vh;
   width: 100vw;
   color: white;
@@ -250,7 +247,7 @@ h2 {
 .contact-page .row .contact-title {
   -ms-flex-line-pack: center;
       align-content: center;
-  color: white;
+  color: maroon;
   font-size: 38px;
   margin: 50px 0px 50px 0px;
 }
