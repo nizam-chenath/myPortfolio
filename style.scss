@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Heebo:wght@600&family=Poppins&family=Redressed&family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Playfair+Display&family=Poppins:wght@500&display=swap');
 
 *{
     margin: 0;
@@ -9,7 +9,7 @@
     
 }
 body{
-    font-family: 'Redressed', cursive;
+    font-family: 'Poppins', sans-serif;
     overflow: hidden;
 }
 nav{
@@ -29,7 +29,7 @@ nav{
     }
     a{
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: black;
         margin-left: 5rem;
     }
@@ -50,14 +50,14 @@ nav{
     }
 }
 h2{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 .logo{
     position: absolute;
     left: 50%;
     top: 50%;
     color: maroon;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-shadow: .5px .5px 0px rgba(0,0,0,0.2);
     transform: translate(-50%,-50%)scale(5);
 }
@@ -100,20 +100,89 @@ h2{
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-    background: url("/images/profile.jpg");
-    background-size: cover;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
     position: absolute;
     top: 70%;
     left: 55%;
     
 }
+.square3,.square4,.square5,.square6,.square7,.square8,.square9,.square10{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: #d8dede;
+    background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%);
+    box-shadow: 1px 2px gray;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+.square4{
+    top: 24%;
+    left: 10%;
+    height: 5rem;
+    width: 5rem;
+}
+.square5{
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+    top: 58%;
+    left: 80%;
+    height: 7rem;
+    width: 7rem;
+}
+.square6{
+    background-color: #c9c4fa;
+    background-image: linear-gradient(315deg, #fad0c4 0%, #a8a7f1 74%);
+    top: 80%;
+    left: 30%;
+    height: 2rem;
+    width: 2rem;
+}
+.square7{
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+    height: 8rem;
+    width: 8rem;
+    left: 10%;
+    top: 50%;
+}
+.square8{
+    background-color: #6464a3;
+    background-image: linear-gradient(315deg, #5c5c6e 0%, #58bdf8 74%);
+    height: 7rem;
+    width: 7rem;
+    left: 40%;
+    top: 60%;
+}
+.square9{
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+    height: 3rem;
+    width: 3rem;
+    left: 40%;
+    top: 20%;
+}
+.square10{
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    height: 4rem;
+    width: 4rem;
+    left: 70%;
+    top: 20%;
+}
 
 .contact-page{
-    background: black;
+    background-image: url("/images/contactBg.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     width: 100vw;
     color: white;
     display: flex;
+    font-family: 'Poppins', sans-serif;
     align-items: center;
     justify-content: center;
     .row{
@@ -124,9 +193,9 @@ h2{
         }
         .contact-title{
             align-content: center;
-            color: #b01724;
+            color: white;
             font-size: 38px;
-            margin: 0px 0px 50px 0px;
+            margin: 50px 0px 50px 0px;
         }
         .form-section{
             margin-left: 50px;
@@ -138,7 +207,7 @@ h2{
                     margin: 10px;
                     padding: 10px;
                     width: 500px;
-                    background: black;
+                    background: white;
                     border: 2px solid #b01724;
                     border-radius: 4px;
                 }
@@ -236,7 +305,6 @@ footer{
     right: 0;
     background: #111;
     height: auto;
-  
     padding-top: 40px;
     color: #fff;
 
@@ -436,7 +504,8 @@ footer{
            top: 13.4vh;
            background-color: #2a2a72;
            background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
-           border: 3px solid black;
+           border: 3px solid rgb(255, 255, 255);
+           box-shadow: 1px 2px 3px wheat;
            display: flex;
            flex-direction: column;
            align-items: center;
@@ -499,24 +568,37 @@ footer{
         }
         ul{
             a{
-                font-size: 1.5rem;
+                font-size: 1rem;
+                color: white;
             }
         }
     }
     .logo{
-        font-size: 0.6rem;
+        font-size: 0.4rem;
+    }
+    .first-page,.second-page{
+        h2{
+            font-size: 2.1rem;
+        }
+        p{
+            font-size: 0.55rem;
+        }
     }
     .square{
-        
+        height: 2rem;
+        width: 2rem;
         background-color: #2a2a72;
         background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
         
+    }
+    .square5,.square7{
+        z-index: -1;
     }
     .first-page{
        
         img{
             height: 35%;
-            width: 90vw;
+            width: 80vw;
             border-radius: 1rem;
             margin-left: 4px;
         }
@@ -535,6 +617,9 @@ footer{
                 margin: 20px 80px;
                 height: 350px;
                 width: 300px;
+                img{
+                    height: 75%;
+                }
             }
         }
     }
@@ -544,16 +629,21 @@ footer{
         }
     }
     .contact-page{
-        height: 80vh;
+        height: 100vh;
+       
         .row{
             margin-top: -100px;
             margin-bottom: -50px;
             .details-section{
                 top: 50%;
-                margin: 20px 0px 75px 100px;
+                margin: 20px 0px 75px 70px;
+                .contact-title{
+
+                    font-family: 'Poppins', sans-serif;
+                }
             }
             .form-section{
-                margin-left: 10px;
+                margin-left: 15px;
                 
                 form{
                     .form-control{

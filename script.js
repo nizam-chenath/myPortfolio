@@ -78,6 +78,22 @@ if(window.innerWidth < 600){
         },
     });
 }
+var tl50 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".home",
+        start: "0%",
+        end: "155%",
+        scrub: 1,
+    },
+});
+var tl51 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".home",
+        start: "0%",
+        end: "125%",
+        scrub: 1,
+    },
+});
 let tl5 = gsap.timeline({
     scrollTrigger: {
         trigger: ".first-page",
@@ -256,15 +272,24 @@ if(window.innerWidth<600){
     tl2.fromTo('.logo', {scale: 6},{scale:1, top: "2rem", left: "3rem", x:"50%", y: "50%"});
 }
 //square
-if(window.innerWidth < 600 || 700){
+if(window.innerWidth < 600 ){
     tl4.fromTo('.square', {left: '10%'}, {left: '55%' , top: "20%", opacity: 0}, );
 }else{
 
     tl4.fromTo('.square', {left: '55%'}, {left: '100%' , top: "10%", opacity: 0}, );
 }
+tl11.fromTo('.square3', {left: '38%', opacity: 1}, {left: '55%' , top: "200%", opacity: 0.3}, );
+tl50.fromTo('.square4', {left: '50%'}, {left: '15%' , top: "20%", opacity: 0}, );
+tl51.fromTo('.square5', {left: '25%',opacity: 0}, {left: '55%' , top: "110%", opacity: 1, scale: .8}, );
+tl4.fromTo('.square6', {left: '30%', opacity: 1}, {left: '65%' , top: "150%", opacity: 1 , scale: 0}, );
+tl50.fromTo('.square7', {left: '40%', top: "150%"}, {left: '5%' , top: "140%", opacity: 0}, );
+tl4.fromTo('.square8', {left: '5%'}, {left: '45%' , top: "70%", opacity: 0}, );
+tl4.fromTo('.square9', {left: '60%', opacity: 0}, {left: '5%' , top: "20%", opacity: 1, scale: 1.2}, );
+tl51.fromTo('.square10', {left: '70%'}, {left: '20%' , top: "50%", opacity: 0}, );
+
 tl5.fromTo('.firstImg', {left: '30%'}, {left: '100%' , opacity: 0}, );
 tl6.fromTo('.secondImg', {opacity: 0}, { opacity: 1}, );
-tl7.fromTo('.square2', {left: '10%',top: "80%"}, {left: '100%' , top: "0%", opacity: 0}, );
+tl7.fromTo('.square2', {left: '10%',top: "80%", opacity: 0}, {left: '100%' , top: "0%", opacity: 1}, );
 tl8.fromTo('.form-section', {opacity: 0}, { opacity: 1}, );
 //details section in form
 if(window.innerWidth < 600 ){
