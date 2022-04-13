@@ -652,13 +652,17 @@ footer{
     }
     .footer-menu {
       display: none;
+      
      
     }
     footer{
 
         .footer-bottom{
+            height: 50px;
+            padding: 10px 0px;
             p{
-                margin-left: 80px;
+                margin-left: 85px;
+                font-size: 8px;
             }
         }
     }

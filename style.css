@@ -756,8 +756,13 @@ footer .footer-bottom .footer-menu ul li a:hover {
   .footer-menu {
     display: none;
   }
+  footer .footer-bottom {
+    height: 50px;
+    padding: 10px 0px;
+  }
   footer .footer-bottom p {
-    margin-left: 80px;
+    margin-left: 85px;
+    font-size: 8px;
   }
 }
 /*# sourceMappingURL=style.css.map */
