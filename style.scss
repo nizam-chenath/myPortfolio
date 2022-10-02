@@ -8,10 +8,12 @@
     overflow-x: hidden;
     
 }
-bo font-family: 'Redressed', cursive;dy{
+
+body{
+    font-family: 'Redressed', cursive;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
-} font-family: 'Redressed', cursive;
+} 
 nav{
     display: flex;
     justify-content: space-between;
@@ -278,6 +280,7 @@ h2{
             box-shadow: 0 8px 8px -4px ;
             transition: width 1.8s;
             z-index: 1;
+          
             img{
                
                 border-radius: 8px;
